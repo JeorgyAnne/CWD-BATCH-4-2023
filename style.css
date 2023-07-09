@@ -1,0 +1,20 @@
+
+body {
+    background-image: url("images/background.png");
+    background-blend-mode: lighten;
+    background-size: 1500;
+    background-attachment: fixed;
+    background-repeat:repeat;
+}
+h1, h2, h3 {
+    font-weight: 200;
+    color: #00695c; 
+}
+p {
+font-weight: 200;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }

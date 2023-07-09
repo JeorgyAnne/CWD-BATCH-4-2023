@@ -1,0 +1,24 @@
+
+
+
+h1, h3 {
+    font-weight: 200;
+    color: #f44336;
+}
+p {
+    color: #ffffff;
+    
+}
+body {
+    background-image: url("images/james-stamler-k3heD_KwH0A-unsplash (1).jpg");
+    background-blend-mode: lighten;
+    background-size: 10;
+    background-attachment: fixed;
+    background-repeat:repeat;
+}
+nav {
+    background-color: #880e4f;
+}
+.sidenav-link {
+    color: #ffffff;
+}

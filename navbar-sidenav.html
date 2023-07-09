@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/a409dbb6aa.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="card-panel grey darken-3 center"><b class="red-text">Navbar</b></h1>
+    <div class="black divider"></div>
+    <div class="container">
+        <div class="row">
+            <p class="flow-text white-text">The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        </div>
+    </div>
+<!--Right Alinged Links-->
+    <div class="container">
+        <div class="row">
+            <h3 class="red-text">Right Alinged Links</h3>
+            <p class="flow-text white-text">To right align your navbar links, just add a right class to your < ul> that contains them.</p>
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="col s12 m6">
+                <a href="#" class="brand-logo">
+                    <i class="material-icons">album</i></a></div>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+                </div>
+            </nav>
+            <br><br>
+<!--Left Aligned Links-->
+            <h3>Left Aligned Links</h3>
+            <p class="flow-text">To left align your navbar links, just add a left class to your < ul> that contains them.</p>
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo right">
+                    <i class="material-icons">album</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+                </div>
+            </nav>
+            <br><br>
+<!--Centering the logo-->
+            <h3>Centering the logo</h3>
+            <p class="flow-text">The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your < a class="brand-logo" >. You will have to make sure yourself that links do not overlap if you use this.</p>
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">
+                    <i class="material-icons">album</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+                </div>
+            </nav>
+            <br><br>
+<!--Active Items-->
+            <h3>Active Items</h3>
+            <p class="flow-text">Add active class to your li tags to denote the current page.</p>
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">
+                    <i class="material-icons">album</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+                </div>
+            </nav>
+            <br><br>
+<!--Extended Navbar with Tabs-->
+            <h3>Extended Navbar with Tabs</h3>
+            <p class="flow-text">To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">
+                    <i class="material-icons">album</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+                </div>
+<!--tabs-->
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#test1">Search</a></li>
+                    <li class="tab"><a href="#test2">Categories</a></li>
+                    <li class="tab"><a href="#test3">Authors</a></li>
+                    <li class="tab"><a href="#test4">Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+<!--Sidenav-->
+            <ul class="sidenav pink darken-4" id="mobile-demo">
+                <li class="active">
+                    <div class="col s12 m6">
+                    <i class="material-icons">album</i></div>
+                    <br>
+                    <div class="divider"></div>
+                    <a href="" class="white-text">Home</a>
+                </li>
+                <li>
+                    <a href="" class="white-text">About</a>
+                </li>
+                <li>
+                    <a href="" class="white-text">Login</a>
+                </li>
+            </ul>
+            <br><br>
+
+<!--Fixed Navbar-->
+        <h3>Fixed Navbar</h3>
+        <p class="flow-text">To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+        
+            <nav>
+                <div class="navbar-fixed">
+            <div class="nav-wrapper">
+                <div class="col s12 m6">
+                <a href="#!" class="brand-logo">
+                    <i class="material-icons">album</i></a></div>
+                <ul class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+<br><br>
+<!--Navbar Down Menu-->
+            <h3>Navbar Down Menu</h3>
+            <p class="flow-text">To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Google account</a></li>
+    <li><a href="#!">Facebook account</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Sign up</a></li>
+    </ul>
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center"><i class="material-icons">album</i></a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+<!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Log in<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+    </nav>
+    <br><br>
+<!--Icon Links-->
+    <h3>Icon Links</h3>
+    <p class="flow-text">You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.</p>
+    <nav>
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center"><i class="material-icons">album</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href=""><i class="material-icons">music_video</i></a></li>
+            <li><a href=""><i class="material-icons">info</i></a></li>
+            <li><a href=""><i class="material-icons">more_vert</i></a></li>
+        </ul>
+        </div>
+    </nav>
+    <p class="flow-text">For adding an icon to a text link you need to add either a left or right class to the icon depending on where you want the icon to be.</p>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12 m6">
+        <a href="#" class="brand-logo"><i class="material-icons">album</i></a></div>
+        <ul class="right hide-on-med-and-down">
+            <li><a href=""><i class="material-icons left">music_video</i>Link with Left Icon</a></li>
+            <li><a href=""><i class="material-icons right">info</i>Link with Right Icon</a></li>
+        </ul>
+        </div>
+    </nav>
+    <br><br>
+<!--Buttons-->
+    <h3>Buttons</h3>
+    <p class="flow-text">You can add buttons into links. For buttons you don't need any additional class. Just pop the .btn class on the a tag.</p>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12 m6">
+        <a href="#!" class="brand-logo"><i class="material-icons">album</i></a></div>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="btn"><i class="material-icons">music_video</i></a></li>
+            <li><a class="btn">About<i class="material-icons right">info</i></a></li>
+            <li><a class="btn-large">Login</a></li>
+        </ul>
+        </div>
+    </nav>
+    <br><br>
+<!--Halfway FAB in Extended Navbar-->
+    <h3>Halfway FAB in Extended Navbar</h3>
+    <p class="flow-text">Add a halfway FAB to your extended navbar.</p>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <div class="col s12 m6">
+        <a href="#!" class="brand-logo"><i class="material-icons">album</i></a></div>
+        <ul class="right hide-on-med-and-down">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Login</a></li>
+        </ul>
+        </div>
+        <div class="nav-content center">
+        <span class="nav-title">WELCOME</span>
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+            <i class="material-icons">music_note</i>
+        </a>
+        </div>
+    </nav>
+    <br><br>
+<!--Search Bar-->
+    <h3>Search Bar</h3>
+    <p class="flow-text">You can add a search form in the navbar.</p>
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required></input>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+<br><br>
+<!--Mobile Collapse Button-->
+    <h3>Mobile Collapse Button</h3>
+    <p class="flow-text">When your nav bar is resized, you will see that the links on the right turn into a hamburger icon menu. Take a look at the example below to get this functionality. Add the entire sidenav-trigger line to your nav.</p>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12 m6">
+        <a href="#!" class="brand-logo">
+        <i class="material-icons">album</i></a></div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">more_vert</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+
+
+        </div>
+    </div>
+        
+
+    <!--Jquer CDN-->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <div style="height: 1000px;"></div>
+<script>
+$(document).ready(function(){
+$('.sidenav').sidenav();
+});
+$(".dropdown-trigger").dropdown();
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
